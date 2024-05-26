@@ -3,11 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portifólio Márcio Rodrigo</title>
+    <!--Css do Projeto-->
+    <link rel="stylesheet" href="./style.css">
+       <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--Dev Icon Fonts-->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />       
 </head>
 <body>
+<main id="container">
+    <aside id="bio-container">
+        <h2>Márcio Rodrigo</h2>
+        <img id="bio-image" src="/Project_GitHub_Pages_v1/img/FotoPortifolio.png" alt="Márcio Rodrigo">
+        <p>Olá, meu nome é Márcio Rodrigo, e sou <span class="highlight">Desenvolvedor .Net</span></p>
+        <p id="welcome-text">Seja bem-vindo!</p>
+        <ul id="social-container">
+            <li><a href="https://x.com/home" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/m%C3%A1rcio-rodrigo-2b500b2b/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        </ul>
+        <div id="email-container">
+            <ion-icon name="mail-outline"></ion-icon><a href="mailto:marciodev@gmail.com">marciodev0614@gmail.com</a>
+        </div>
+    </aside>    
+              
+    <section id="about-container">
+        <h1 id="name">Márcio Rodrigo</h1>
+        <p id="title"><span class="highlight">Desenvolvedor .Net</span></p>
+        <p class="description">Sou um desenvolvedor que atuo em projetos diversos, gosto de participar desde a <span class="highligth">definição das regras de negócio e levantamento de requitivos, até o <span class="highlight">deploy da aplicação.</span></span></p>
+        <p class="description">Atuo tanto no <span class="highlight">front-end</span> como no <span class="highlight">back-end</span>, sou apaixonado por tecnologia, estudo todos os dias no intuito de me tornar cada vez melhor e escrever códigos de qualidade.</p>
+        <a onclick="alerta()" href="" id="btn-project"><ion-icon name="share-social-outline" target="_blank"></ion-icon><span>Ver Projetos</span></a>
+        <h2 id="skills-section-title">Minhas Skills</h2>
+        <p class="description">Conheça as tecnologias que venho me especializando:</p>
+        <div id="skills-container">
+            <div id="skill-box">
+                <p class="skills-title">Front-end</p>
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div id="skill-box">
+                <p class="skills-title">Back-end</p>
+                <i class="devicon-csharp-plain colored"></i>
+                <i class="devicon-nodejs-plain-wordmark"></i>             
+            </div>
+            <div id="skill-box">
+                <p class="skills-title">Databases</p>
+                <i class="devicon-azuresqldatabase-plain colored"></i>
+                <i class="devicon-mysql-plain colored"></i>             
+            </div>
+            <div id="skill-box">
+                <p class="skills-title">Front-end Frameworks</p>
+                <i class="devicon-react-plain colored"></i>
+                <i class="devicon-vscode-plain colored"></i>
+            </div>
+            <div id="skill-box">
+                <p class="skills-title">Back-end Frameworks</p>
+                <i class="devicon-dotnetcore-plain colored"></i>
+                <i class="devicon-visualstudio-plain colored"></i>
+            </div>
+        </div>
+    </section>
+</main>
 
-<h1>Teste Márcio</h1>
-    
+<!--Ion Icon-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
 </body>
 </html>
+
+<script>
+    function alerta(){
+        alert('Repositório em contrução!')
+    }
+</script>
